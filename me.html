@@ -5,143 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    
+    <link rel="stylesheet" href ="1.css">
 </head>
 
 <body>
     <!--STYLE-->
-    <style>
-           body
-           {
-                background:  #080808;
-           }
-           .top
-           {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-           }
-           
-           .navbar
-           {
-            background: #242425c6;
-            border-radius: 15px;
-            padding: 15px 15px;
-            
-            display: flex;
-            justify-content: space-between;
-            align: center;
-
-            margin: 20px auto;
-            width: 98%;
-           }
-           .logo
-           {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            
-
-           }
-           .logo h2
-           {
-            color:#e5e7eb;
-            font-family:  Calibri, Arial, sans-serif;
-           }
-           
-           .links
-           
-           {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-
-            
-           }
-           .navbar a
-           {
-            text-decoration: none;
-            color: #e5e7eb;        
-            font-size: 16px;
-            padding: 8px 14px;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            position: relative;
-           }
-           .navbar a:hover
-           {
-            background: #38bdf8;
-            color: #0f172a;
-            border-radius: 7px;
-            transition: 0.3s;
-            transform: scale(1.03);
-           }
-           .navbar a::after 
-           {
-            content: "";
-            position: absolute;
-            width: 0%;
-            height: 2px;
-            background: #11daf1;
-            bottom: -4px;
-            left: 0;
-            transition: 0.3s;
-            }
-            .navbar a:hover::after 
-            {
-             width: 100%;
-            }
-            .navbar 
-            {
-                backdrop-filter: blur(10px);
-                background: rgba(30, 41, 59, 0.7);
-                border: 1px solid rgba(255,255,255,0.1);
-                box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-            }
-            .wave-text
-            {
-                font-weight: bold;
-                color: #11daf1;
-            }
-            .wave-text span
-            
-            {
-                display: inline-block;
-                animation: wave 1.5s infinite;
-            }
-            .wave-text span:nth-chlid(1) { animation-delay: 0s; }
-            .wave-text span:nth-chlid(2) { animation-delay: 0.1s; }
-            .wave-text span:nth-chlid(3) { animation-delay: 0.2s; }
-            .wave-text span:nth-chlid(4) { animation-delay: 0.3s; }
-            .wave-text span:nth-chlid(5) { animation-delay: 0.4s; }
-            .wave-text span:nth-chlid(6) { animation-delay: 0.5s; }
-            .wave-text span:nth-chlid(7) { animation-delay: 0.6s; }
-           
-            @keyframes wave {
-
-    0%, 100% {
-        transform: translateY(0);
-        text-shadow: 0 0 5px #11daf1;
-        opacity: 0.7;
-    }
-
-    50% {
-        transform: translateY(0);
-        text-shadow: 
-            0 0 10px #11daf1,
-            0 0 20px #11daf1,
-            0 0 40px #22c55e;
-        opacity: 1;
-    }
-}
-
-    </style>
+    
     <!-- Navbar -->
     <header>
         <nav class="navbar">
-            <div class ="logo">
             
+            <div class ="logo">
+            <label for="menu-toggle" class ="menu-btn">☰</label>
             <h2 class="wave-text">
                 <span>H</span>
                 <span>a</span>
@@ -152,52 +27,36 @@
                 <span>t</span>
                </h2>
             </div>
-            <div class="links">
-            <a href="#home" class="active">Home</a> |
-            <a href="#about">About</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#contact">Contact</a>
-            </div>
+           
         </nav>
 
         <hr>
     </header>
+     
+     
+     <div class="blur-circle one"></div>
+<div class="blur-circle two"></div>
 
-
-    <!-- Home Section -->
-    <section id="home">
-
-        <h1>Hello, I'm Harshit </h1>
-
-        <p>
-            I am a CSE undergrate.
-            
-        </p>
-
-        <button> </button>
-
-        <hr>
-    </section>
+   
 
 
     <!-- About Section -->
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <p>
-            I am a passionate Computer Science student.
-            Still Learning.
-            I enjoy solving coding problems and building websites.
-        </p>
-
-        <hr>
-    </section>
-
-
+    <div class="about">
+        <div class="pic">
+            <img src ="me.jpeg">
+        </div>
+         <div class="text">
+         <h1>Hii,</h1>
+            I am harshit a CSE undergraduate.<br>
+            I enjoy learning new stuffs and technologies.<br>
+            Just learning and growing every day.<br>
+            
+         </div>
+    </div>
+    
+    
     <!-- Skills Section -->
-    <section id="skills">
+    <div id="skills">
 
         <h2>My Skills</h2>
 
@@ -211,14 +70,14 @@
         </ul>
 
         <hr>
-    </section>
+    </div>
 
 
     
 
 
     <!-- Contact Section -->
-    <section id="contact">
+    <div id="contact">
 
         <h2>Contact Me</h2>
 
@@ -228,7 +87,7 @@
         <p>LinkedIn: -----</p>
 
         <hr>
-    </section>
+    </div>
 
 
     <!-- Footer -->
