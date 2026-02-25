@@ -92,7 +92,49 @@
             {
              width: 100%;
             }
+            .navbar 
+            {
+                backdrop-filter: blur(10px);
+                background: rgba(30, 41, 59, 0.7);
+                border: 1px solid rgba(255,255,255,0.1);
+                box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            }
+            .wave-text
+            {
+                font-weight: bold;
+                color: #11daf1;
+            }
+            .wave-text span
+            
+            {
+                display: inline-block;
+                animation: wave 1.5s infinite;
+            }
+            .wave-text span:nth-chlid(1) { animation-delay: 0s; }
+            .wave-text span:nth-chlid(2) { animation-delay: 0.1s; }
+            .wave-text span:nth-chlid(3) { animation-delay: 0.2s; }
+            .wave-text span:nth-chlid(4) { animation-delay: 0.3s; }
+            .wave-text span:nth-chlid(5) { animation-delay: 0.4s; }
+            .wave-text span:nth-chlid(6) { animation-delay: 0.5s; }
+            .wave-text span:nth-chlid(7) { animation-delay: 0.6s; }
            
+            @keyframes wave {
+
+    0%, 100% {
+        transform: translateY(0);
+        text-shadow: 0 0 5px #11daf1;
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(0);
+        text-shadow: 
+            0 0 10px #11daf1,
+            0 0 20px #11daf1,
+            0 0 40px #22c55e;
+        opacity: 1;
+    }
+}
 
     </style>
     <!-- Navbar -->
@@ -100,7 +142,15 @@
         <nav class="navbar">
             <div class ="logo">
             
-            <h2>harshit</h2>
+            <h2 class="wave-text">
+                <span>H</span>
+                <span>a</span>
+                <span>r</span>
+                <span>s</span>
+                <span>h</span>
+                <span>i</span>
+                <span>t</span>
+               </h2>
             </div>
             <div class="links">
             <a href="#home" class="active">Home</a> |
